@@ -1,0 +1,39 @@
+@media (max-width: 1100px) {
+    .projects {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .projects .box  {
+        width: 31%;
+    }
+
+    .projects .box:nth-child(7) {
+        width: 100%;
+    }
+
+    .projects .box .content h2 {
+        font-size: 20px;
+    }
+
+    .projects .box .content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 740px) {
+    .projects .box  {
+        width: 47%;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects .box  {
+        width: 100%;
+    }
+}

@@ -26,9 +26,10 @@ a {
     height: 100vh;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    
 }
 
 .projects .box {
@@ -62,9 +63,7 @@ a {
     align-items: center;
 }
 
-.projects .box:hover,
-.projects .box:nth-child(2):hover,
-.projects .box:nth-child(7):hover {
+.projects .box:hover {
     outline: 3px solid var(--main-color);
 
 }
@@ -89,48 +88,27 @@ a {
 
 .projects .box:nth-child(1) {
     grid: 2fr;
-    background-color: #444;
+    background-color: #222;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     cursor: initial;
-    background-image: url(./images/tela.PNG);
 }
 
 .projects .box:nth-child(1):hover {
-    background-size: 60%; 
-}
-
-.projects .box:nth-child(2) {
-    background-image: url(./images/tela.PNG);
-}
-
-.projects .box:nth-child(3) {
-    background-image: url(./images/tela.PNG);
+    outline: none;
 }
 
 .projects .box:nth-child(4) {
-    background-color: #555;
-    grid-row: span 2;
-    background-image: url(./images/tela.PNG);
-    background-size: 70%; 
+    background-color: #444;
 }
 
 .projects .box:nth-child(4):hover {
     outline: 3px solid var(--main-color);
 }
 
-.projects .box:nth-child(5) {
-    background-image: url(./images/tela.PNG);
-}
-
-.projects .box:nth-child(6) {
-    background-image: url(./images/tela.PNG);
-}
-
 .projects .box:nth-child(7) {
-    background-color: #666;
+    background-color: #111;
     grid-column-start: 3;
     grid-column-end: 5;
-    background-image: url(./images/tela.PNG);
 }
 
