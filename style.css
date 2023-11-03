@@ -1,0 +1,123 @@
+:root {
+    --main-color: #ffdf00;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    background: #222;
+}
+
+.projects {
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.projects .box {
+    background: #333;
+    padding: 30px;
+    display: grid;
+    font-size: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background-size: 50%; 
+    background-position: bottom right; 
+    background-repeat: no-repeat; 
+    transition: 0.2s;
+}
+
+.projects .box:hover,
+.projects .box:nth-child(2):hover,
+.projects .box:nth-child(7):hover {
+    outline: 3px solid var(--main-color);
+    background-size: 80%; 
+    background-position: bottom right; 
+    background-repeat: no-repeat; 
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.projects .box:hover h2 {
+    color: var(--main-color);
+}
+
+
+.projects .box .content {
+    width: 100%;
+}
+
+.projects .box .content h2{
+    margin: 10px 0;
+}
+
+.projects img {
+    width: 80px;
+    margin-bottom: 18px;
+}
+
+.projects .box:nth-child(1) {
+    grid: 2fr;
+    background-color: #444;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    cursor: initial;
+    background-image: url(./images/tela.PNG);
+}
+
+.projects .box:nth-child(1):hover {
+    background-size: 60%; 
+}
+
+.projects .box:nth-child(2) {
+    background-image: url(./images/tela.PNG);
+}
+
+.projects .box:nth-child(3) {
+    background-image: url(./images/tela.PNG);
+}
+
+.projects .box:nth-child(4) {
+    background-color: #555;
+    grid-row: span 2;
+    background-image: url(./images/tela.PNG);
+    background-size: 70%; 
+}
+
+.projects .box:nth-child(4):hover {
+    background-size: 90%; 
+    outline: 3px solid var(--main-color);
+}
+
+.projects .box:nth-child(5) {
+    background-image: url(./images/tela.PNG);
+}
+
+.projects .box:nth-child(6) {
+    background-image: url(./images/tela.PNG);
+}
+
+.projects .box:nth-child(7) {
+    background-color: #666;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(./images/tela.PNG);
+}
+
+.projects .box:nth-child(7):hover {
+    background-size: 70%; 
+}
