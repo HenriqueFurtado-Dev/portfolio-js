@@ -15,6 +15,10 @@ body {
     background: #222;
 }
 
+a {
+    text-decoration: none;
+}
+
 .projects {
     position: relative;
     padding: 40px;
@@ -41,15 +45,28 @@ body {
     transition: 0.2s;
 }
 
+.projects .box .content p {
+    margin-bottom: 20px;
+}
+
+.projects .box .content a {
+    padding: 8px 20px;
+    background-color: var(--main-color);
+    font-size: 16px;
+    margin-top: 15px;
+    color: black;
+    border-radius: 2px;
+    display: flex;
+    width: 120px;
+    gap: 5px;
+    align-items: center;
+}
+
 .projects .box:hover,
 .projects .box:nth-child(2):hover,
 .projects .box:nth-child(7):hover {
     outline: 3px solid var(--main-color);
-    background-size: 80%; 
-    background-position: bottom right; 
-    background-repeat: no-repeat; 
-    transition: 0.2s;
-    cursor: pointer;
+
 }
 
 .projects .box:hover h2 {
@@ -99,7 +116,6 @@ body {
 }
 
 .projects .box:nth-child(4):hover {
-    background-size: 90%; 
     outline: 3px solid var(--main-color);
 }
 
@@ -118,6 +134,3 @@ body {
     background-image: url(./images/tela.PNG);
 }
 
-.projects .box:nth-child(7):hover {
-    background-size: 70%; 
-}
